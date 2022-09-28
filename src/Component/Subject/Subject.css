@@ -1,0 +1,33 @@
+.card{
+    width: 22rem;
+}
+.card h5{
+    margin-bottom: 30px;
+}
+.btn{
+    background-color: #864879!important;
+    color: white !important;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    width: 90%;
+}
+@media only screen and (max-width: 668px) {
+    .Subject{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        width: 12rem;
+    }
+}
+
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+    .Subject{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 13rem;
+    }
+}
