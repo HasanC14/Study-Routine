@@ -1,0 +1,43 @@
+[  {
+    "id": "001",
+    "subject": "Physics",
+    "description": "Physics is the branch of science that deals with the structure of matter and how the fundamental constituents of the universe interact.",
+    "time": 1.5,
+    "img": "./Images/p.jpg"
+  },
+  {
+    "id": "002",
+    "subject": "Chemistry",
+    "description": "Chemistry is the branch of science that deals with the properties, composition, and structure of elements and compounds and how they can change.",
+    "time": 1,
+    "img": "./Images/c.jpg"
+  },
+  {
+    "id": "003",
+    "subject": "Mathematics",
+    "description": "Mathematics is the science and study of quality, structure, space, and change. Mathematicians seek out patterns and formulate new conjectures.",
+    "time": 2,
+    "img": "./Images/m.jpg"
+  },
+  {
+    "id": "004",
+    "subject": "Biology",
+    "description": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field.",
+    "time": 1,
+    "img": "./Images/b.jpg"
+  },
+  {
+    "id": "005",
+    "subject": "English",
+    "description": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England.",
+    "time": 1,
+    "img": "./Images/e.jpg"
+  },
+  {
+    "id": "006",
+    "subject": "Spanish",
+    "description": "Spanish is a Romance language of the Indo-European language family that evolved from colloquial Latin spoken in the Iberian Peninsula of Europe.",
+    "time": 1,
+    "img": "./Images/s.jpg"
+  }
+]
