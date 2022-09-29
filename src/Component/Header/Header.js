@@ -11,7 +11,7 @@ const Header = () => {
         </h2>
       </div>
       <div>
-        <a href="Main">Home</a>
+        <a href="Home">Home</a>
         <a href="Blog">Blog</a>
       </div>
     </nav>
