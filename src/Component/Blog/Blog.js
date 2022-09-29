@@ -24,7 +24,7 @@ const Blog = () => {
         </p>
       </div>
       <div className="question">
-        <h1>Why useEffect is used in React??</h1>
+        <h1>Why useEffect is used in React?</h1>
         <p>
           The motivation behind the introduction of useEffect Hook is to
           eliminate the side-effects of using class-based components. For

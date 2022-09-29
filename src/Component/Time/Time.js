@@ -23,16 +23,15 @@ const Time = (props) => {
       progress: undefined,
     });
   };
-  const BreakTime = (props) => {
-    console.log(props);
-    // const initialValue = () => Number(localStorage.getItem("Break Time"));
-    // const [props, setValue] = useState(initialValue);
-    // setValue(props);
-    // useEffect(() => {
-    //   localStorage.setItem("Break Time", props);
-    // }, [props]);
-  };
 
+  const BreakTime = (id) => {
+    localStorage.setItem("Selected Break Time", id);
+    useEffect(() => {
+      console.log(localStorage.getItem("Selected Break Time"));
+      const Value = localStorage.getItem("Selected Break Time");
+      document.getElementById("bt").innerHTML = ` <p>${Value}</p>`;
+    }, []);
+  };
   return (
     <div>
       <ToastContainer />
@@ -66,7 +65,7 @@ const Time = (props) => {
         </div>
         {/* Break Buttons */}
         <div className="mt-5 ms-3">
-          <h2>Add a Break Time</h2>
+          <h2 className="text-center">Add a Break Time</h2>
         </div>
         <div className="Break d-flex justify-content-between ms-3 me-3">
           <div className="d-flex flex-column info">
@@ -88,7 +87,7 @@ const Time = (props) => {
         {/* Study Details */}
         <div className=" Study Details">
           <div className="mt-5 ms-3">
-            <h2>Study Details</h2>
+            <h2 className="text-center">Study Details</h2>
           </div>
           <div className="common ">
             <div className="d-flex justify-content-between Study mb-3">

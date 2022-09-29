@@ -14,7 +14,7 @@
 .Time{
     background-color: #864879;
     margin-top: 20%;
-    margin-right: 10%;
+    margin-right: 5%;
     border-radius: 15px;
 }
 /* Mobile */
@@ -22,9 +22,11 @@
     .Subject{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 15%;
     }
     .home-container{
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 15%;
     }
 }
 /* Tablet */
@@ -32,6 +34,7 @@
     .Subject{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 15%;
     }
     .home-container{
         grid-template-columns: 3fr 2fr;
