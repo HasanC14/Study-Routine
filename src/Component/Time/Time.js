@@ -13,7 +13,15 @@ const Time = (props) => {
     total = subject.time + total;
   }
   const notify = () => {
-    toast("Wow! You Successfully Completed Activity!!");
+    toast("👏 Wow Great Job!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
   const BreakTime = (props) => {
     console.log(props);
