@@ -5,6 +5,12 @@ import "./Home.css";
 
 const Home = () => {
   const [subjects, setSubject] = useState([]);
+  const [AddedList, setAddedList] = useState([]);
+  const Add = (subjects) => {
+    let newAddedList = [];
+    newAddedList = [...AddedList, subjects];
+    setAddedList(newAddedList);
+  };
   useEffect(() => {
     fetch("subjects.json")
       .then((res) => res.json())
@@ -14,11 +20,11 @@ const Home = () => {
     <div className="home-container">
       <div className="Subject">
         {subjects.map((subject) => (
-          <Subject key={subject.id} subjects={subject}></Subject>
+          <Subject key={subject.id} subjects={subject} Add={Add}></Subject>
         ))}
       </div>
       <div className="Time">
-        <Time></Time>
+        <Time AddedList={AddedList}></Time>
       </div>
     </div>
   );

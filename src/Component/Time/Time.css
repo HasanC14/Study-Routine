@@ -1,0 +1,71 @@
+.time{
+    position: sticky;
+        top: 100px;
+}
+.Profile img{
+    width: 80px;
+    border-radius: 50%;
+}
+.Profile{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    background-color: #1F1D36;
+    padding: 15px;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;   
+}
+.common{
+    background-color: #1F1D36;
+    padding: 15px;
+    color: aliceblue;
+    border: 2px solid black;
+   
+}
+.add_btn{
+    background-color: #1F1D36;
+    color: #864879;
+    border-radius: 15px;
+    padding: 10px;
+}
+.complete_btn{
+    background-color: #1F1D36;
+    color: #864879;
+    padding: 10px;
+    width: 90%;
+    border-radius: 20px;
+}
+.add_btn:hover{
+    background-color: #864879;
+    color: #1F1D36;
+}
+.complete_btn:hover{
+    background-color: #864879;
+    color: #1F1D36;
+}
+/* Mobile  */
+@media only screen and (max-width: 668px) {
+    .Profile img{
+        width: 40px;
+    }
+    .Profile{
+        font-size: 10px;
+    }
+    .Other_Info, .Break, .Study{
+        flex-direction:column ;
+    }
+    .Other_Info, .Break div{
+        margin-bottom: 10px ;
+    }
+}
+ /* Tablet */
+ @media only screen and (min-width: 669px) and (max-width: 992px) {
+    .Profile img{
+        width: 60px;
+    }
+    .Profile{
+        font-size: 15px;
+    }
+}
