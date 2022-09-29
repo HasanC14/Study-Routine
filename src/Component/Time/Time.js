@@ -1,6 +1,6 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import profile from "../image/Profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -24,13 +24,14 @@ const Time = (props) => {
     });
   };
 
-  const BreakTime = (id) => {
-    localStorage.setItem("Selected Break Time", id);
-    document.getElementById("bt").innerHTML = `<p>${id}Min</p>`;
+  const BreakTime = (Value) => {
+    localStorage.setItem("Selected Break Time", Value);
+    document.getElementById("bt").innerText = Value;
   };
+
   useEffect(() => {
     const Value = localStorage.getItem("Selected Break Time");
-    document.getElementById("bt").innerHTML = `<p>${Value}Min</p>`;
+    document.getElementById("bt").innerText = Value;
   }, []);
 
   return (
@@ -51,17 +52,17 @@ const Time = (props) => {
         </div>
         {/* Other_Info */}
         <div className="Other_Info common d-flex justify-content-between align-items-center mt-5">
-          <div className="d-flex flex-column info">
+          <div className="d-flex flex-column info align-items-center">
             <h5>Age</h5>
             <h5>20</h5>
           </div>
-          <div className="d-flex flex-column info">
+          <div className="d-flex flex-column info align-items-center">
             <h5>Class</h5>
             <h5>10</h5>
           </div>
-          <div className="d-flex flex-column info">
+          <div className="d-flex flex-column info ">
             <h5>Preparation</h5>
-            <h5>SSC</h5>
+            <h5 className="text-center">SSC</h5>
           </div>
         </div>
         {/* Break Buttons */}
@@ -97,7 +98,11 @@ const Time = (props) => {
             </div>
             <div className="d-flex justify-content-between Study">
               <h5>Selected Break Time</h5>
-              <div id="bt"></div>
+              <div>
+                <p>
+                  <span id="bt">0</span>Min
+                </p>
+              </div>
             </div>
           </div>
         </div>
