@@ -26,12 +26,14 @@ const Time = (props) => {
 
   const BreakTime = (id) => {
     localStorage.setItem("Selected Break Time", id);
-    useEffect(() => {
-      console.log(localStorage.getItem("Selected Break Time"));
-      const Value = localStorage.getItem("Selected Break Time");
-      document.getElementById("bt").innerHTML = ` <p>${Value}</p>`;
-    }, []);
+    document.getElementById("bt").innerHTML = ` <p>${id}Min</p>`;
   };
+  useEffect(() => {
+    console.log(localStorage.getItem("Selected Break Time"));
+    const Value = localStorage.getItem("Selected Break Time");
+    document.getElementById("bt").innerHTML = ` <p>${Value}Min</p>`;
+  }, []);
+
   return (
     <div>
       <ToastContainer />
